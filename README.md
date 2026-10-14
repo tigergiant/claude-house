@@ -69,14 +69,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\house.ps1 preflight
 ## How it works
 
 1. Clone this repo on a Windows 11 Pro/Enterprise/Education PC with Hyper-V.
-2. Start your agent (Claude Code on the host) from an **administrator** terminal. Step 0 checks that the shell is elevated, and most steps change Hyper-V, the network or the firewall, which needs an administrator. Open Start, right-click **Terminal**, choose **Run as administrator**, then:
+2. Start your coding agent from an **administrator** terminal. We build and test with Claude Code; any agent that can read AGENTS.md and run PowerShell on your PC (Codex, for example) should work. Step 0 checks that the shell is elevated, and most steps change Hyper-V, the network or the firewall, which needs an administrator. Open Start, right-click **Terminal**, choose **Run as administrator**, then:
 
    ```powershell
    cd <path to your clone>
-   claude
+   claude   # or codex, or your agent's own command
    ```
 
-   Running as administrator does not let the agent skip you: it still shows every admin command and waits for your yes.
+   Running as administrator does not let the agent skip you: AGENTS.md tells it to show every admin command and wait for your yes.
 3. Tell your agent: *"Build claude-house by following AGENTS.md."*
 4. The agent loops through the runbook:
    - `house next` finds the step to do;

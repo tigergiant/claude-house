@@ -70,14 +70,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\house.ps1 preflight
 ## 怎么搭
 
 1. 在一台装了 Hyper-V 的 Windows 11 专业版/企业版/教育版 PC 上克隆本仓库。
-2. 在**管理员**终端里启动你的 agent（主机上的 Claude Code）。第 0 步会检查当前 shell 有没有提权；而且大多数步骤要改 Hyper-V、网络或防火墙，这些都需要管理员权限。打开"开始"菜单，右键 **终端**（英文系统里叫 Terminal），选 **以管理员身份运行**（Run as administrator），然后：
+2. 在**管理员**终端里启动你的 agent。我们用 Claude Code 搭建和测试；能读 AGENTS.md、能在你电脑上跑 PowerShell 的 agent（比如 Codex）也应该可以。第 0 步会检查当前 shell 有没有提权；而且大多数步骤要改 Hyper-V、网络或防火墙，这些都需要管理员权限。打开"开始"菜单，右键 **终端**（英文系统里叫 Terminal），选 **以管理员身份运行**（Run as administrator），然后：
 
    ```powershell
    cd <path to your clone>
-   claude
+   claude   # 或者 codex，换成你的 agent 的启动命令
    ```
 
-   用管理员身份运行，agent 也不能绕过你：每条管理员命令它都会先给你看，等你同意了才执行。
+   用管理员身份运行，也不等于 agent 可以绕过你：AGENTS.md 要求它把每条管理员命令先给你看，等你同意了才执行。
 3. 对你的 agent 说：*"按照 AGENTS.md 搭建 claude-house。"*
 4. agent 会按 runbook 一轮一轮地做：
    - `house next` 找出下一步该做什么；
