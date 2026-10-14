@@ -1,0 +1,11 @@
+name: Idea
+description: Something the house should do, or do better.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Tell us what you were trying to do and where the house got in the way.
+    validations:
+      required: true
