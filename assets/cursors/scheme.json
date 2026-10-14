@@ -1,0 +1,20 @@
+{
+  "Arrow": "arrow.cur",
+  "Help": "help.cur",
+  "AppStarting": "working.ani",
+  "Wait": "busy.ani",
+  "Crosshair": "precision.cur",
+  "IBeam": "text.cur",
+  "NWPen": "pen.cur",
+  "No": "unavailable.cur",
+  "SizeNS": "size-ns.cur",
+  "SizeWE": "size-we.cur",
+  "SizeNWSE": "size-nwse.cur",
+  "SizeNESW": "size-nesw.cur",
+  "SizeAll": "move.cur",
+  "UpArrow": "alternate.cur",
+  "Hand": "link.cur",
+  "Pin": "pin.cur",
+  "Person": "person.cur",
+  "SchemeName": "claude-house"
+}

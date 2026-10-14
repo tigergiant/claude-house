@@ -1,0 +1,397 @@
+[
+  {
+    "file": "brand/mascot-sheet.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "prompt": "Use case: stylized-concept. Create a 2048x2048 character model sheet on plain cream #FAF9F5, no text or labels. One consistent appealing mascot Hermi: small chubby toy-like hermit crab whose shell is a tiny cottage: cream plaster walls, terracotta tiled roof, one round glowing warm yellow window, tiny chimney with a wisp of smoke, green roof sprout. Soft coral terracotta body #D97757/#C96442, two short eye stalks with big glossy black pupils and white highlights, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Warm sunlit soft painted 3D-ish illustration, friendly cozy curious homebody, never sharp/scary/pixel art. Palette cream #FAF9F5, sand #F0EEE6, wood #D9B48F, terracotta #C96442, coral #D97757, ink #3D3929, muted #8A8170, sage #7A9A6B, warm light #FFE7B8. Layout: four full-body views front, three-quarter, side, back in top two rows; six separate clear expression vignettes happy, curious, thinking, sleepy, surprised, proud below. Preserve identical cottage/body anatomy throughout. No name, text, logos, watermark.",
+    "native_size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "brand/mascot.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "prompt": "Use case: stylized-concept. Reference image is the approved Hermi character bible; preserve exactly its cream cottage shell, curved terracotta tiled roof, glowing round front window, tiny chimney smoke, green sprout, chubby coral crab, two eye stalks, glossy black eyes, cheeks and smile. Create single full-body three-quarter view waving with SMALL claw, right claw slightly bigger and resting, exactly two claws and four short legs. Soft painted toy-like 3D warm study aesthetic. No text. 2048x2048, centered with generous transparent padding. Actual transparent background.",
+    "native_size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "look/wallpaper.png",
+    "size": [
+      3840,
+      2160
+    ],
+    "prompt": "EDIT the first reference image, do not compose a new scene. PIXEL-LOCK the house outer contour, every roof tile, chimney, sprout, wall edges, round window frames, ledge rocks, ground and horizon to EXACT same coordinates as first reference. Same camera, framing, crop and dimensions. The second reference only supplies Hermi anatomy and face. No model-drawn letters. Turn sunset into bright morning: warm cream-beige smooth background, soft sun, no stars, no glowing windows. Open the SAME circular wooden door hinged inward to the right. Hermi's coral crab body emerges through this doorway, back end remains inside this house which IS his shell, NO second shell on his back. Big glossy eyes on TWO short stalks, rounded coral body, rosy cheeks, broad gentle happy smile looking DIRECTLY toward viewer, TWO claws (one lifted waving), FOUR short legs on doorstep. Remove slippers so feet clear. The crab should be small enough to fit doorway, preserve all static outer house and ground geometry; sunlight pleasantly lit. Left 30% smooth wall/sky, bottom 96px unimportant ledge. No speech bubble yet, no text. Highest native 16:9.\nDay background refinement: Edit only sky/background in this image: replace blue sky and detailed clouds with a VERY SMOOTH WARM CREAM-BEIGE sunlit wall/sky (#FAF9F5 / #F0EEE6 / pale #FFE7B8). Absolutely no blue, no cloud formations, no visible sun disc. Gentle diffuse morning sunlight. Left30% plain calm warm beige all the way down to grassy ledge. Preserve EVERY pixel location of cottage house roof outline, roof tiles, sprout chimney, wall, windows, ground rocks and ledge. Preserve Hermi waving looking straight at viewer with two eyes/two claws and four legs, backside inside doorway, no extra shell. No text or bubble. Same 16:9 size.",
+    "work_order": "W13B",
+    "history": [
+      {
+        "work_order": "W11",
+        "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Desktop wallpaper 3840x2160, 16:9 cozy sunlit study: light wood desk on right, pothos plants in terracotta pots, cream wall, sunlight window shadows, terracotta accents, plain keyboard without labels. Hermi on desk next to keyboard reading tiny book. LEFT 35% entirely calm plain cream wall soft light, no objects; bottom 6% calm uninterrupted soft wood tone. No text, no screen UI. Room details and Hermi occupy right 65%.\nTaskbar revision prompt: Use case: precise-object-edit. Reference image 1 is the daytime wallpaper edit target; image 2 is the identity bible. Preserve the entire room, mascot anatomy, plants and book unchanged except clear the bottom taskbar strip. Remove foreground plant leaves and desk mat from bottom 10% across entire width, extending the plain natural light wood desktop seamlessly. Bottom 6% MUST contain only calm flat wood, no object, mat, leaf, keyboard, claw or decoration. Preserve calm left35%. No text, logos, UI. 3840x2160.\nFinal keyboard edit prompt: Use case: precise-object-edit. Image1 is final daytime wallpaper edit target, image2 is Hermi bible. Keep whole image identical, add ONLY one small plain cream computer keyboard on desk immediately to Hermi's right, at the far right side, above the bottom10% empty strip. Keyboard has blank unlabeled keys, no letters/text/logo. Match natural sunlit study perspective; do not overlap mascot or mug. Left35% and bottom6% must stay unchanged and calm, bottom6% uninterrupted bare wood. Preserve character anatomy, cottage, book, room, plants, colors and sunlight. 3840x2160.",
+        "native_size": [
+          1672,
+          941
+        ]
+      },
+      {
+        "file": "look/wallpaper.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "prompt": "Use case: stylized-concept. Create a16:9 desktop wallpaper at HIGHEST NATIVE RESOLUTION your tool permits (prefer3840x2160), upscale handled later. Image1 is door identity reference: SAME full ROUND honey-brown vertical-plank wooden door, thick cream circular frame, round BRASS KNOB with keyhole below, same wood shade and grain. Image2 is existing sunny study style/contents reference. Image3 approved Hermi identity. Story: now INSIDE that cozy little house, early bright morning, door on FAR RIGHT edge wide OPEN; see daylight and small lush garden through perfectly circular doorway. Show the round door leaf clearly along right edge with same brass knob, so it is recognized as the same door from image1; no arch-rectangle door. Brass key now hangs on a little wall hook just LEFT of circular doorway, clearly visible. Cream wall, light wood desk with books, pothos in terracotta pots, tiny ceramic mug, plain cream keyboard with blank unlabeled keys. Hermi (identical coral crab, glossy eyes, cream cottage shell with terracotta tiles/chimney/sprout/glowing round window, two claws,four legs) sits on desk around x2500 on final3840-wide canvas reading a little sage green book. Preserve warm softly painted toy-like3D style, sunlight window shadows, terracotta/sage palette. Composition: LEFT30% x0..1152 MUST be entirely plain cream wall with soft light shadows ONLY, no plants, furniture, door, character or accessories there. Desk/furniture clustered right60%. Bottom96px y2064..2160 must be calm plain desk/wood/floor with nothing important or detailed crossing it. Bright inside warm cozy study, garden outside right only. No text/logos/watermarks/UI/screens, no extra limbs, no malformed claws/plants.",
+        "work_order": "W13",
+        "native_size": [
+          1672,
+          941
+        ]
+      },
+      {
+        "file": "look/wallpaper.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "prompt": "EDIT the first reference image, do not compose a new scene. PIXEL-LOCK the house outer contour, every roof tile, chimney, sprout, wall edges, round window frames, ledge rocks, ground and horizon to EXACT same coordinates as first reference. Same camera, framing, crop and dimensions. The second reference only supplies Hermi anatomy and face. No model-drawn letters. Turn sunset into bright morning: warm cream-beige smooth background, soft sun, no stars, no glowing windows. Open the SAME circular wooden door hinged inward to the right. Hermi's coral crab body emerges through this doorway, back end remains inside this house which IS his shell, NO second shell on his back. Big glossy eyes on TWO short stalks, rounded coral body, rosy cheeks, broad gentle happy smile looking DIRECTLY toward viewer, TWO claws (one lifted waving), FOUR short legs on doorstep. Remove slippers so feet clear. The crab should be small enough to fit doorway, preserve all static outer house and ground geometry; sunlight pleasantly lit. Left 30% smooth wall/sky, bottom 96px unimportant ledge. No speech bubble yet, no text. Highest native 16:9.\nDay background refinement: Edit only sky/background in this image: replace blue sky and detailed clouds with a VERY SMOOTH WARM CREAM-BEIGE sunlit wall/sky (#FAF9F5 / #F0EEE6 / pale #FFE7B8). Absolutely no blue, no cloud formations, no visible sun disc. Gentle diffuse morning sunlight. Left30% plain calm warm beige all the way down to grassy ledge. Preserve EVERY pixel location of cottage house roof outline, roof tiles, sprout chimney, wall, windows, ground rocks and ledge. Preserve Hermi waving looking straight at viewer with two eyes/two claws and four legs, backside inside doorway, no extra shell. No text or bubble. Same 16:9 size.",
+        "work_order": "W13B",
+        "native_size": [
+          1672,
+          941
+        ],
+        "reference_base": "look/lockscreen.png",
+        "assembly": "Pillow LANCZOS upscale; w13b_scene.py typography/mock",
+        "typography": {
+          "font_file": "C:/Windows/Fonts/msyhbd.ttc",
+          "font_collection_index": 0,
+          "Chinese_font_px": 60,
+          "Chinese_ink_bbox": [
+            0,
+            13,
+            480,
+            73
+          ],
+          "English_font_px": 39,
+          "bubble_box": [
+            2280,
+            1180,
+            2860,
+            1385
+          ],
+          "Chinese": "很高兴又见到你！",
+          "English": "Nice to see you again"
+        }
+      }
+    ],
+    "native_size": [
+      1672,
+      941
+    ],
+    "reference_base": "look/lockscreen.png",
+    "assembly": "Pillow LANCZOS upscale; w13b_scene.py typography/mock",
+    "typography": {
+      "font_file": "C:/Windows/Fonts/msyhbd.ttc",
+      "font_collection_index": 0,
+      "Chinese_font_px": 60,
+      "Chinese_ink_bbox": [
+        0,
+        13,
+        480,
+        73
+      ],
+      "English_font_px": 39,
+      "bubble_box": [
+        1840,
+        1470,
+        2420,
+        1675
+      ],
+      "Chinese": "很高兴又见到你！",
+      "English": "Nice to see you again"
+    }
+  },
+  {
+    "file": "look/wallpaper-evening.png",
+    "size": [
+      3840,
+      2160
+    ],
+    "prompt": "EDIT the first reference image, do not compose a new scene. PIXEL-LOCK the house outer contour, every roof tile, chimney, sprout, wall edges, round window frames, ledge rocks, ground and horizon to EXACT same coordinates as first reference. Same camera, framing, crop and dimensions. The second reference only supplies Hermi anatomy and face. No model-drawn letters. Same composition at dusk, pastel violet/blue warm evening, round windows and a tiny warm lamp inside door illuminate doorstep. SAME circular wooden door open inward to right. Hermi's chubby coral face with two short stalk eyes looks warmly toward viewer, body backside inside his cottage shell's doorway, sitting on doorstep holding ONE small cream mug in two claws, exactly four short legs. NO second house on back, remove slippers. Cozy soft painted 3D, unchanged static house outline, roof sprout chimney and ground coordinates. Left30%calm, bottom96pxclear. No bubble, no text. Highest native16:9.",
+    "work_order": "W13B",
+    "history": [
+      {
+        "work_order": "W11",
+        "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Same study room composition as daytime wallpaper, 3840x2160. Dusk, desk lamp warm light on right, Hermi reading tiny book beside keyboard with cottage window glowing, few stars through window on far right. Left 35% calm empty softly shaded warm wall, bottom 6% calm. No text, no screen UI. Preserve same furniture and window layout. Reference image 2 is the daytime study: keep room, furniture, mascot scale and composition identical, change lighting only; add small desk lamp on far right. Clear bottom 6% entirely of objects: uninterrupted wood desk strip across full width.\nTaskbar revision prompt: Use case: precise-object-edit. Reference image 1 is the evening wallpaper edit target; image 2 is identity bible. Preserve room, dusk lighting, desk lamp, mascot and plant unchanged except bottom taskbar strip. Remove foreground leaves and mat from bottom10% across full width, seamlessly extend warm wood desktop. Bottom6% only empty calm wood. Left35% remain calm. No text, logos, UI. 3840x2160.",
+        "native_size": [
+          1672,
+          941
+        ]
+      },
+      {
+        "file": "look/wallpaper-evening.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "prompt": "Use case: lighting-weather / precise-object-edit. Image1 is the approved W13 MORNING INTERIOR edit target; image2 is CLOSED DOOR identity reference; image3 approved Hermi bible. Produce highest available native16:9 resolution (prefer3840x2160). Keep EXACT same camera, study room, desk, shelves, pothos, books, mug position, keyboard, key hook, Hermi scale and character identity. Change to evening: the SAME ROUND honey-brown vertical-plank door on far RIGHT is now fully CLOSED, circular cream frame, same round brass knob and keyhole. Preserve same door wood and hardware from image2. Brass key still on the hook by door. Warm desk lamp illuminates study from right; subtle cool violet evening shadows, cozy darker cream wall. Hermi now gently holds a tiny terracotta mug in claws instead of reading book; set the book closed on desk nearby. Hermi cottage windows glow warmly. LEFT30% remains calm plain wall/light shadows only. Bottom96px at final2160height remains empty calm wood, no important object. No garden visible through closed door. No text/logos/watermarks/UI/screens, no additional claws/legs, no new room layout.",
+        "work_order": "W13",
+        "native_size": [
+          1672,
+          941
+        ]
+      },
+      {
+        "file": "look/wallpaper-evening.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "prompt": "EDIT the first reference image, do not compose a new scene. PIXEL-LOCK the house outer contour, every roof tile, chimney, sprout, wall edges, round window frames, ledge rocks, ground and horizon to EXACT same coordinates as first reference. Same camera, framing, crop and dimensions. The second reference only supplies Hermi anatomy and face. No model-drawn letters. Same composition at dusk, pastel violet/blue warm evening, round windows and a tiny warm lamp inside door illuminate doorstep. SAME circular wooden door open inward to right. Hermi's chubby coral face with two short stalk eyes looks warmly toward viewer, body backside inside his cottage shell's doorway, sitting on doorstep holding ONE small cream mug in two claws, exactly four short legs. NO second house on back, remove slippers. Cozy soft painted 3D, unchanged static house outline, roof sprout chimney and ground coordinates. Left30%calm, bottom96pxclear. No bubble, no text. Highest native16:9.",
+        "work_order": "W13B",
+        "native_size": [
+          1672,
+          941
+        ],
+        "reference_base": "look/lockscreen.png",
+        "assembly": "Pillow LANCZOS upscale; w13b_scene.py typography/mock",
+        "typography": {
+          "font_file": "C:/Windows/Fonts/msyhbd.ttc",
+          "font_collection_index": 0,
+          "Chinese_font_px": 60,
+          "Chinese_ink_bbox": [
+            0,
+            14,
+            360,
+            72
+          ],
+          "English_font_px": 39,
+          "bubble_box": [
+            2280,
+            1180,
+            2740,
+            1385
+          ],
+          "Chinese": "今天也辛苦啦",
+          "English": "Good work today"
+        }
+      }
+    ],
+    "native_size": [
+      1672,
+      941
+    ],
+    "reference_base": "look/lockscreen.png",
+    "assembly": "Pillow LANCZOS upscale; w13b_scene.py typography/mock",
+    "typography": {
+      "font_file": "C:/Windows/Fonts/msyhbd.ttc",
+      "font_collection_index": 0,
+      "Chinese_font_px": 60,
+      "Chinese_ink_bbox": [
+        0,
+        14,
+        360,
+        72
+      ],
+      "English_font_px": 39,
+      "bubble_box": [
+        1960,
+        1470,
+        2420,
+        1675
+      ],
+      "Chinese": "今天也辛苦啦",
+      "English": "Good work today"
+    }
+  },
+  {
+    "file": "look/lockscreen.png",
+    "size": [
+      3840,
+      2160
+    ],
+    "prompt": "Edit/reference use: approved mascot bible establishes the cottage design and soft painted toy-like cozy 3D style. Create a NEW fixed-camera landscape scene at highest native resolution, target 3840x2160 16:9. ONE tiny cottage shell house on a simple sage grassy windowsill-like ledge in the lower RIGHT third, house including roof about 35 percent image height, entirely right of x=70% and below y=58%. Cream plaster, curved terracotta tile roof, small chimney wisp, little green sprout, ROUND wooden front door with brass knob shut, TWO round windows glowing gold, thin gold light under door. Tiny coral slippers at door suggest someone inside. Absolutely NO crab, no face or eyes on the house, no character visible. Sunset orange-pink sky with soft medium violet upper sky, two tiny stars at far right. Vast smooth low-detail sky above and left; horizon/ledge at y=89%, straight and simple. Clock area x29%-71%,y7%-37% and password x39%-61%,y44%-69% must be soft darker violet-pink gradients only, white text readable. No text, logos, UI, busy plants. Warm magical welcoming peaceful composition, sunlit soft painted 3D illustration, palette cream sand terracotta coral sage warm gold. Keep house silhouette, door/window positions and ground line exceptionally clear for exact matched-camera subsequent edits.\nBase refinement: Edit this image as fixed camera: preserve exactly house location, roof silhouette, chimney, ledge and horizon. Make front wooden door a true CIRCULAR ROUND wooden door (not tall arched), brass knob, shut, light under it. Make BOTH windows circular (front and right side). Reduce cloud details to almost none in the entire upper-middle and central sky, retaining soft violet to pink sunset gradient with a little distant orange glow at far left bottom and two stars far right. The Windows clock and password areas must be smooth mid-dark warm/violet gradients, not bright clouds. House is lower-right, slippers outside, no crab visible. Preserve soft cozy painted 3D style. No text. Highest native landscape resolution.",
+    "work_order": "W13B",
+    "history": [
+      {
+        "work_order": "W11",
+        "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Windows sign-in wallpaper 3840x2160. Cozy study evening, soft blurred warm brown wall. TOP CENTRE and CENTRE THIRD must be empty calm mid-to-dark warm brown tones so white clock and avatar/password overlay remain readable. No furniture or bright lights across centre. Hermi sleepy peeking from lower right holding tiny key, full identifiable shell and face, keep away from central third. Dim dusk window far right. No text or UI.\nFinal edit prompt: Use case: precise-object-edit. Reference image1 is lock-screen edit target; image2 is character bible. Change ONLY Hermi expression to sleepy: drooping half-closed glossy eyes on existing stalks, gentle tired smile, relaxed claws holding same little key. Preserve identical cottage shell, anatomy and size. Preserve calm dark brown top-centre and central third, room and composition. No text/UI. 3840x2160.",
+        "native_size": [
+          1672,
+          941
+        ]
+      },
+      {
+        "file": "look/lockscreen.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "prompt": "Use case: stylized-concept. Image1 is approved Hermi character bible and identity reference. Maintain cottage shell, coral crab with two short glossy eye stalks, two rounded claws and four short legs, gentle friendly expression. Warm soft painted 3D-ish cozy storybook aesthetic, cream plaster, terracotta tiled roof, sage plants, light wood. No text/logos/watermark, no UI, no extra limbs. Create a16:9 lock-screen illustration at HIGHEST AVAILABLE NATIVE RESOLUTION (prefer3840x2160), not a collage. OUTSIDE a cottage, door CLOSED, dusk deep blue-violet sky with a few sparse stars. Lower-right third contains Hermi's cream cottage shell rendered as a REAL little house with terracotta tiles, round golden windows on both sides of its entrance. A large perfectly circular honey-brown wooden front door: vertical planks, thick round cream frame, single round brass knob on the door's RIGHT side with small keyhole just below. Warm gold light leaks along narrow door gap and from keyhole and two round windows. Hermi stands beside the door holding a small brass key toward lock and looks back at viewer with small excited smile. Keep Hermi wearing its same small cottage shell so identity is clear. Magical but calm. On3840x2160 coordinate layout the big door and Hermi MUST be entirely in x2700..3750,y950..2050; house can rise on far right. Upper-middle CLOCK ZONE x1100..2740,y150..800 must be empty low-detail soft dark blue-violet sky with no stars in this zone. CENTRAL PASSWORD ZONE x1500..2340,y950..1500 must be empty low-detail dim blue-violet wall or sky. Left and centre mostly tranquil night sky; no path/bushes/bright lights crossing these zones. Nothing important in bottom96px. Hermi stands at the actual front door, physically holds key close to brass lock. No text.\nFinal door/zone revision: Use case: precise-object-edit. Image1 is lock-screen edit target; image2 Hermi bible. Retain Hermi identity, blue-violet magical dusk, cream cottage, terracotta tiles, key and brass hardware. TWO CRITICAL CHANGES: 1) Front door must be a PERFECT FULL CIRCLE, width equals height, curved continuously all the way around including the bottom, like a hobbit round wooden door, NOT an arched rectangular door. Honey-brown vertical wood planks, thick circular cream frame, brass round knob on RIGHT, keyhole beneath, glowing light around its full circular gap. Hermi holds brass key toward lock, looks back and smiles. 2) Reduce and move cottage+Hermi grouping to far LOWER RIGHT: on final3840x2160, door and Hermi entirely x2800..3750,y1200..2020; cottage roof x2800..3840,y800..1450. Clock zone x1100..2740,y150..800 COMPLETELY EMPTY dark soft blue-violet sky, no stars or roof. Password zone x1500..2340,y950..1500 COMPLETELY EMPTY dark soft blue-violet sky, no clouds, bushes, house or mascot. Left and center mostly dim low-detail sky, remove bright sunset disk, glowing horizon or detailed coast from center. Sparse tiny stars ONLY far upperleft or farright away from clock. Foreground details ONLY lower right. Maintain warm cozy painted3D style. No text or UI. Highest available native landscape16:9 resolution, preferably3840x2160.",
+        "work_order": "W13",
+        "native_size": [
+          1672,
+          941
+        ]
+      },
+      {
+        "file": "look/lockscreen.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "prompt": "Edit/reference use: approved mascot bible establishes the cottage design and soft painted toy-like cozy 3D style. Create a NEW fixed-camera landscape scene at highest native resolution, target 3840x2160 16:9. ONE tiny cottage shell house on a simple sage grassy windowsill-like ledge in the lower RIGHT third, house including roof about 35 percent image height, entirely right of x=70% and below y=58%. Cream plaster, curved terracotta tile roof, small chimney wisp, little green sprout, ROUND wooden front door with brass knob shut, TWO round windows glowing gold, thin gold light under door. Tiny coral slippers at door suggest someone inside. Absolutely NO crab, no face or eyes on the house, no character visible. Sunset orange-pink sky with soft medium violet upper sky, two tiny stars at far right. Vast smooth low-detail sky above and left; horizon/ledge at y=89%, straight and simple. Clock area x29%-71%,y7%-37% and password x39%-61%,y44%-69% must be soft darker violet-pink gradients only, white text readable. No text, logos, UI, busy plants. Warm magical welcoming peaceful composition, sunlit soft painted 3D illustration, palette cream sand terracotta coral sage warm gold. Keep house silhouette, door/window positions and ground line exceptionally clear for exact matched-camera subsequent edits.\nBase refinement: Edit this image as fixed camera: preserve exactly house location, roof silhouette, chimney, ledge and horizon. Make front wooden door a true CIRCULAR ROUND wooden door (not tall arched), brass knob, shut, light under it. Make BOTH windows circular (front and right side). Reduce cloud details to almost none in the entire upper-middle and central sky, retaining soft violet to pink sunset gradient with a little distant orange glow at far left bottom and two stars far right. The Windows clock and password areas must be smooth mid-dark warm/violet gradients, not bright clouds. House is lower-right, slippers outside, no crab visible. Preserve soft cozy painted 3D style. No text. Highest native landscape resolution.",
+        "work_order": "W13B",
+        "native_size": [
+          1672,
+          941
+        ],
+        "reference_base": "look/lockscreen.png",
+        "assembly": "Pillow LANCZOS upscale; w13b_scene.py typography/mock"
+      }
+    ],
+    "native_size": [
+      1672,
+      941
+    ],
+    "reference_base": "look/lockscreen.png",
+    "assembly": "Pillow LANCZOS upscale; w13b_scene.py typography/mock"
+  },
+  {
+    "file": "look/avatar.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "prompt": "Use case: logo-brand. Image1 is Hermi identity reference, simplify it drastically to a FLAT STICKER avatar. Four flat colors ONLY: terracotta #C96442, coral #D97757, cream #FAF9F5, near-black #201D1A. ONE plain rounded cream house-shell silhouette, ONE terracotta triangular roof line, ONE round terracotta door opening. Coral smiling face with TWO large near-black eye dots on very short stalks and TWO simple coral open pincer claws peeking from the door. Symmetric friendly tiny sticker, crisp flat vector-like shapes, no outlines finer than necessary. No window, shingles, tiles, sprout, chimney, smoke, legs, texture, shading, gradient, extra objects or text. Make the whole mascot silhouette compact and bold, face and two eyes large enough for32px. Actual transparent background; will be centered within a70%-diameter circle on a flat cream disc in Pillow. Generate at your highest native square resolution, intended final1024x1024.\nPillow conversion: alpha-bounded subject rescaled inside central70%-diameter circle, cream #FAF9F5 background; quantized without dithering to exactly #C96442,#D97757,#FAF9F5,#201D1A.",
+    "work_order": "W13",
+    "history": [
+      {
+        "work_order": "W11",
+        "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Account avatar 1024 square, happy Hermi head and cottage shell centered, fills about 75% of canvas, simple bold silhouette clearly readable at 32 pixels and circular crop. Solid warm sand #F0EEE6 background. No text.\nFinal edit prompt: Use case: stylized-concept. Reference image1 is avatar edit target; image2 is character bible. Make account avatar 1024 square. Hermi head and shell only, happy; reduce mascot size so entire silhouette including chimney fits within central75% of canvas and stays inside circular crop; no legs below crop. Front face and roof bold, same cottage round glowing window, sprout and chimney. Background must be FLAT SOLID #F0EEE6, absolutely no gradient, cast shadow or texture. Simplified details for32px readability. No text.\nFinal extraction prompt: Use case: background-extraction. Image1 is the final approved avatar subject. Remove ONLY the background, make genuinely transparent background. Preserve the entire happy Hermi head and cottage shell, two eye stalks, smiling open mouth, two claws, all colors, chimney and green sprout exactly as shown. No new objects, no legs, no text. Keep entire subject including smoke with transparent padding. This cutout will be resized to75% and composited onto exact flat sand #F0EEE6 in Pillow.\nAssembly: alpha-bounded subject contained in central768x768, composited on solid RGB(240,238,230) at1024x1024 with Pillow.",
+        "native_size": [
+          1254,
+          1254
+        ]
+      }
+    ],
+    "assembly": "w13-flat-four-color",
+    "native_size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "icons/house-1024.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Desktop shortcut icon 1024 square. Simplified bold Hermi cottage shell with two coral eye stalks and big glossy eyes peeking out underneath. Cream plaster, terracotta roof, round yellow window, green sprout. Toy-like softly painted but very bold uncluttered shapes, clearly recognizable small. Actual transparent background. No text.",
+    "native_size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "icons/terminal.png",
+    "size": [
+      256,
+      256
+    ],
+    "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Terminal app icon square. Hermi face below a simplified tiny cottage shell, bold clean shape, on the cottage window render exactly the tiny symbol >_ in ink. Simplify for 32px readability. Actual transparent background.",
+    "native_size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "icons/folder-projects-1024.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Folder app icon square. Cream and warm sand folder, Hermi peeking over its upper edge, cottage roof and eye stalks visible. Bold simple shapes, same mascot style, readable at 32px. Actual transparent background. No text.",
+    "native_size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "icons/folder-docs-1024.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Folder app icon square. Same cream and warm sand folder, Hermi peeking over upper edge and holding a tiny sage green book with coral claw. Cottage shell visible. Bold simple shapes, readable at 32px. Actual transparent background. No text.",
+    "native_size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "terminal/background.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Terminal background 1920x1080 extremely light plain cream #FAF9F5 with small Hermi sleeping in lower right, occupying only rightmost 22% and lowest 28%, eyes closed, claws tucked. Almost blank rest, no text, no decorative clutter, intended for 8% opacity.",
+    "native_size": [
+      1672,
+      941
+    ]
+  },
+  {
+    "file": "brand/logo.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Project mascot logo 1024 square. Hermi head and cottage shell in a simple rounded warm sand badge, happy, bold clean silhouette, tiny sage accent, recognizable at small sizes. Actual transparent background outside badge. No text.",
+    "native_size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "file": "brand/wordmark.png",
+    "size": [
+      2000,
+      600
+    ],
+    "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Project wordmark 2000x600 very wide landscape. Hermi full character on left quarter, text exactly claude-house on right in friendly rounded sans, dark ink #3D3929. Large clean type evenly spaced, one line, vertically centered. Only requested text, actual transparent background.",
+    "native_size": [
+      2091,
+      752
+    ]
+  },
+  {
+    "file": "brand/banner.png",
+    "size": [
+      1600,
+      480
+    ],
+    "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. README banner 1600x480 ultra wide cozy sunlit study scene matching daytime wallpaper: light wood desk, pothos, terracotta pots, soft sun through window on right. Hermi on desk at right reading tiny book. Left 40% calm cream wall, no text, no logos, no screen UI.",
+    "native_size": [
+      2216,
+      709
+    ]
+  },
+  {
+    "file": "brand/social.png",
+    "size": [
+      1280,
+      640
+    ],
+    "prompt": "Use case: stylized-concept. Reference image 1 is approved Hermi character bible: preserve same rounded chubby coral terracotta hermit crab, glossy eyes on two short stalks, rosy cheeks, gentle smile, two rounded claws (right slightly larger), four short legs. Cottage shell has cream plaster, curved terracotta tiles, round glowing yellow front window, tiny chimney smoke and green sprout. Warm sunlit soft painted 3D-ish cozy aesthetic. Palette #FAF9F5 #F0EEE6 #D9B48F #C96442 #D97757 #3D3929 #8A8170 #7A9A6B #FFE7B8. No watermarks, logos or extra limbs. Social preview 1280x640. Approved Hermi on left of centered wordmark exactly claude-house in large friendly rounded sans dark ink #3D3929. Centered mascot plus typography group over very soft blurred warm sunlit study background with light wood, pothos and terracotta accents. Readable spacious layout.",
+    "native_size": [
+      1774,
+      887
+    ]
+  }
+]

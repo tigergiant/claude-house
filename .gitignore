@@ -1,0 +1,15 @@
+# Real blueprint and anything local
+house.config.psd1
+*.local.*
+*.private.*
+
+# Runtime output
+out/
+state/
+status.json
+events.jsonl
+*.log
+
+# Test output
+tests/out/
+TestResults/

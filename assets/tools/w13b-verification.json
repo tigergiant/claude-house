@@ -1,0 +1,486 @@
+{
+  "native_size": [
+    1672,
+    941
+  ],
+  "output_size": [
+    3840,
+    2160
+  ],
+  "house_outline_max_offset_px": 6.889952153110048,
+  "house_outline_landmarks": {
+    "day": [
+      {
+        "native_anchor": [
+          1095,
+          610
+        ],
+        "native_offset": [
+          -3,
+          0
+        ],
+        "ncc": 0.7615103125572205,
+        "output_offset_px": 6.889952153110048
+      },
+      {
+        "native_anchor": [
+          1137,
+          551
+        ],
+        "native_offset": [
+          -3,
+          0
+        ],
+        "ncc": 0.7441235780715942,
+        "output_offset_px": 6.889952153110048
+      },
+      {
+        "native_anchor": [
+          1178,
+          490
+        ],
+        "native_offset": [
+          -3,
+          0
+        ],
+        "ncc": 0.7335287928581238,
+        "output_offset_px": 6.889952153110048
+      },
+      {
+        "native_anchor": [
+          1214,
+          446
+        ],
+        "native_offset": [
+          -2,
+          -1
+        ],
+        "ncc": 0.8071929216384888,
+        "output_offset_px": 5.134921495654017
+      },
+      {
+        "native_anchor": [
+          1268,
+          446
+        ],
+        "native_offset": [
+          -1,
+          -2
+        ],
+        "ncc": 0.6236370801925659,
+        "output_offset_px": 5.133284258562847
+      },
+      {
+        "native_anchor": [
+          1291,
+          408
+        ],
+        "native_offset": [
+          -1,
+          -1
+        ],
+        "ncc": 0.5935134291648865,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          1354,
+          412
+        ],
+        "native_offset": [
+          -1,
+          -2
+        ],
+        "ncc": 0.7030974626541138,
+        "output_offset_px": 5.133284258562847
+      },
+      {
+        "native_anchor": [
+          1381,
+          408
+        ],
+        "native_offset": [
+          -1,
+          -2
+        ],
+        "ncc": 0.6921385526657104,
+        "output_offset_px": 5.133284258562847
+      },
+      {
+        "native_anchor": [
+          1444,
+          425
+        ],
+        "native_offset": [
+          -1,
+          -2
+        ],
+        "ncc": 0.8309693336486816,
+        "output_offset_px": 5.133284258562847
+      },
+      {
+        "native_anchor": [
+          1471,
+          533
+        ],
+        "native_offset": [
+          -1,
+          -1
+        ],
+        "ncc": 0.8761488795280457,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          1519,
+          584
+        ],
+        "native_offset": [
+          0,
+          0
+        ],
+        "ncc": 0.9287014603614807,
+        "output_offset_px": 0.0
+      },
+      {
+        "native_anchor": [
+          1557,
+          641
+        ],
+        "native_offset": [
+          0,
+          0
+        ],
+        "ncc": 0.9254153966903687,
+        "output_offset_px": 0.0
+      },
+      {
+        "native_anchor": [
+          1539,
+          797
+        ],
+        "native_offset": [
+          -1,
+          1
+        ],
+        "ncc": 0.8787360191345215,
+        "output_offset_px": 3.2470918079333333
+      }
+    ],
+    "evening": [
+      {
+        "native_anchor": [
+          1095,
+          610
+        ],
+        "native_offset": [
+          -1,
+          0
+        ],
+        "ncc": 0.950409471988678,
+        "output_offset_px": 2.2966507177033493
+      },
+      {
+        "native_anchor": [
+          1137,
+          551
+        ],
+        "native_offset": [
+          -1,
+          0
+        ],
+        "ncc": 0.9170500636100769,
+        "output_offset_px": 2.2966507177033493
+      },
+      {
+        "native_anchor": [
+          1178,
+          490
+        ],
+        "native_offset": [
+          -1,
+          0
+        ],
+        "ncc": 0.9012793302536011,
+        "output_offset_px": 2.2966507177033493
+      },
+      {
+        "native_anchor": [
+          1214,
+          446
+        ],
+        "native_offset": [
+          -1,
+          0
+        ],
+        "ncc": 0.9257860779762268,
+        "output_offset_px": 2.2966507177033493
+      },
+      {
+        "native_anchor": [
+          1268,
+          446
+        ],
+        "native_offset": [
+          -1,
+          -1
+        ],
+        "ncc": 0.9007856845855713,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          1291,
+          408
+        ],
+        "native_offset": [
+          -1,
+          -1
+        ],
+        "ncc": 0.9203397035598755,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          1354,
+          412
+        ],
+        "native_offset": [
+          -1,
+          -1
+        ],
+        "ncc": 0.9223134517669678,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          1381,
+          408
+        ],
+        "native_offset": [
+          -1,
+          0
+        ],
+        "ncc": 0.8956531882286072,
+        "output_offset_px": 2.2966507177033493
+      },
+      {
+        "native_anchor": [
+          1444,
+          425
+        ],
+        "native_offset": [
+          -1,
+          -1
+        ],
+        "ncc": 0.9521132111549377,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          1471,
+          533
+        ],
+        "native_offset": [
+          -1,
+          -1
+        ],
+        "ncc": 0.9181504845619202,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          1519,
+          584
+        ],
+        "native_offset": [
+          -1,
+          -1
+        ],
+        "ncc": 0.9044960737228394,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          1557,
+          641
+        ],
+        "native_offset": [
+          -1,
+          0
+        ],
+        "ncc": 0.9493131041526794,
+        "output_offset_px": 2.2966507177033493
+      },
+      {
+        "native_anchor": [
+          1539,
+          797
+        ],
+        "native_offset": [
+          -1,
+          0
+        ],
+        "ncc": 0.9577708840370178,
+        "output_offset_px": 2.2966507177033493
+      }
+    ]
+  },
+  "ground_landmarks": {
+    "day": [
+      {
+        "native_anchor": [
+          337,
+          858
+        ],
+        "native_offset": [
+          -1,
+          1
+        ],
+        "ncc": 0.7534343600273132,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          541,
+          883
+        ],
+        "native_offset": [
+          -1,
+          1
+        ],
+        "ncc": 0.8927415013313293,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          811,
+          861
+        ],
+        "native_offset": [
+          -1,
+          1
+        ],
+        "ncc": 0.4672578275203705,
+        "output_offset_px": 3.2470918079333333
+      },
+      {
+        "native_anchor": [
+          1580,
+          870
+        ],
+        "native_offset": [
+          -1,
+          1
+        ],
+        "ncc": 0.8201257586479187,
+        "output_offset_px": 3.2470918079333333
+      }
+    ],
+    "evening": [
+      {
+        "native_anchor": [
+          337,
+          858
+        ],
+        "native_offset": [
+          -1,
+          0
+        ],
+        "ncc": 0.9118121266365051,
+        "output_offset_px": 2.2966507177033493
+      },
+      {
+        "native_anchor": [
+          541,
+          883
+        ],
+        "native_offset": [
+          0,
+          0
+        ],
+        "ncc": 0.9196162223815918,
+        "output_offset_px": 0.0
+      },
+      {
+        "native_anchor": [
+          811,
+          861
+        ],
+        "native_offset": [
+          -1,
+          0
+        ],
+        "ncc": 0.6695215106010437,
+        "output_offset_px": 2.2966507177033493
+      },
+      {
+        "native_anchor": [
+          1580,
+          870
+        ],
+        "native_offset": [
+          -1,
+          0
+        ],
+        "ncc": 0.9315418004989624,
+        "output_offset_px": 2.2966507177033493
+      }
+    ]
+  },
+  "method": "Sobel gradient patch NCC, 49x49 native patches, +/-8px search; displacement scaled to final 3840x2160; no code-drawn illustrated scene or geometry warp",
+  "typography": {
+    "day": {
+      "font_file": "C:/Windows/Fonts/msyhbd.ttc",
+      "font_collection_index": 0,
+      "Chinese_font_px": 60,
+      "Chinese_ink_bbox": [
+        0,
+        13,
+        480,
+        73
+      ],
+      "English_font_px": 39,
+      "bubble_box": [
+        1840,
+        1470,
+        2420,
+        1675
+      ],
+      "Chinese": "很高兴又见到你！",
+      "English": "Nice to see you again"
+    },
+    "evening": {
+      "font_file": "C:/Windows/Fonts/msyhbd.ttc",
+      "font_collection_index": 0,
+      "Chinese_font_px": 60,
+      "Chinese_ink_bbox": [
+        0,
+        14,
+        360,
+        72
+      ],
+      "English_font_px": 39,
+      "bubble_box": [
+        1960,
+        1470,
+        2420,
+        1675
+      ],
+      "Chinese": "今天也辛苦啦",
+      "English": "Good work today"
+    }
+  },
+  "retained_avatar_icons_cursors_and_old_proofs_unchanged": true,
+  "visual_review": {
+    "lockscreen_crab_not_visible": true,
+    "clock_zone_low_detail": true,
+    "password_zone_low_detail": true,
+    "day_crab_looks_at_viewer": true,
+    "day_back_inside_doorway": true,
+    "day_left30_percent_calm": true,
+    "evening_mug_and_open_door": true,
+    "greeting_readable_at1920x1080": true,
+    "overlay_inspected": true
+  }
+}

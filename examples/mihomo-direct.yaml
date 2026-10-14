@@ -1,0 +1,8 @@
+# Minimal mihomo configuration for claude-house in Direct mode.
+# Listens on loopback only; every connection goes straight out.
+mixed-port: 7890
+allow-lan: false
+bind-address: 127.0.0.1
+mode: direct
+log-level: warning
+ipv6: false

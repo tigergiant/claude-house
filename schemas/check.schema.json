@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:claude-house:schema:check:v1",
+  "title": "claude-house check result",
+  "description": "Returned by checks/<id>.ps1 and printed by `house check <id> --json`. Read-only proof that one runbook step is done.",
+  "type": "object",
+  "required": ["id", "ok", "detail"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "ok": { "type": "boolean" },
+    "status": { "enum": ["pass", "fail", "blocked"], "description": "Set by the CLI: blocked when a required step does not pass." },
+    "detail": { "type": "string", "maxLength": 2000 },
+    "fix": { "type": "string", "description": "Runbook anchor or exact command that addresses the failure." },
+    "evidence": { "type": "object", "description": "Raw observed facts (booleans, counts, versions). Never secrets." },
+    "ms": { "type": "integer" }
+  }
+}

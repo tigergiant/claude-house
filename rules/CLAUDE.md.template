@@ -1,0 +1,34 @@
+<!-- claude-house:begin -->
+# claude-house rules
+
+## Network
+
+There is one gate at {{GateUrl}}. Programs that ignore the proxy cannot reach the internet by design. Never try to bypass the gate. Never add NAT, a VPN, or another network adapter.
+
+## Shared folders
+
+{{AddressBook}}
+
+Read-only rows refuse writes. Paths in prompts and documents work unchanged for mirrored rows.
+
+## Searching shares
+
+Recursive search from a share root over SMB is slow. Search a narrow subfolder. The bounded-search hook may block root searches and print a scoped command.
+
+## Deliverables
+
+{{Deliverables}}
+
+## Windows shells
+
+- Bash tool = Git Bash: POSIX commands, forward-slash paths, /dev/null. PowerShell code goes to the PowerShell tool.
+- PowerShell tool = Windows PowerShell 5.1: no `&&`, `||`, `??`, ternary or heredoc; do not add `2>&1` to programs.
+- Long or backslash-heavy text (scripts, JSON, regex, commit messages): write a file with the Write tool, then run the file (`git commit -F`, `--body-file`).
+- Edit text files with the Edit tool, not `sed -i` or `Get-Content | Set-Content`.
+- Do not run `chcp`. Do not run `find /`, `tail -f` or servers in the foreground; use `run_in_background`.
+- The windows-guard hook blocks these traps and prints the correct form. Follow it instead of rephrasing the same command.
+
+## When something breaks
+
+Do not work around a broken network or share. Tell the human to run `house doctor` on the host and follow `house next`. Inside the VM, Claude cannot run `house doctor`.
+<!-- claude-house:end -->

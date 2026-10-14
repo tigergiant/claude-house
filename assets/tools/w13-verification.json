@@ -1,0 +1,156 @@
+{
+  "before": {
+    "busy": {
+      "mean_absolute_difference": 2.6619466145833335,
+      "pair_differences": [
+        3.707275390625,
+        3.4228515625,
+        0.845458984375,
+        0.81005859375,
+        3.411376953125,
+        3.705322265625,
+        3.74951171875,
+        3.4111328125,
+        0.8603515625,
+        0.863037109375,
+        3.40380859375,
+        3.753173828125
+      ],
+      "definition": "Premultiplied RGBA, 0..255 channel units, 12 consecutive32px pairs including wrap"
+    },
+    "working": {
+      "mean_absolute_difference": 0.775390625,
+      "pair_differences": [
+        1.30126953125,
+        0.810302734375,
+        0.326904296875,
+        0.3134765625,
+        0.802001953125,
+        1.29736328125,
+        0.971435546875,
+        0.94384765625,
+        0.31298828125,
+        0.353515625,
+        0.915283203125,
+        0.956298828125
+      ],
+      "definition": "Premultiplied RGBA, 0..255 channel units, 12 consecutive32px pairs including wrap"
+    },
+    "link_hotspot": [
+      15,
+      2
+    ]
+  },
+  "after": {
+    "busy": {
+      "mean_absolute_difference": 7.175984700520833,
+      "pair_differences": [
+        8.90087890625,
+        6.63818359375,
+        4.395263671875,
+        2.69580078125,
+        7.366455078125,
+        11.829833984375,
+        9.6904296875,
+        7.3427734375,
+        5.7529296875,
+        2.50390625,
+        8.02880859375,
+        10.966552734375
+      ],
+      "definition": "Premultiplied RGBA, 0..255 channel units, 12 consecutive32px pairs including wrap"
+    },
+    "working": {
+      "mean_absolute_difference": 3.4106852213541665,
+      "pair_differences": [
+        3.832763671875,
+        3.19091796875,
+        2.202392578125,
+        1.6396484375,
+        3.689208984375,
+        5.7216796875,
+        4.5224609375,
+        3.358642578125,
+        3.17724609375,
+        1.446533203125,
+        3.40478515625,
+        4.741943359375
+      ],
+      "definition": "Premultiplied RGBA, 0..255 channel units, 12 consecutive32px pairs including wrap"
+    },
+    "link_hotspot": [
+      4,
+      3
+    ],
+    "ico_sizes": [
+      [
+        16,
+        16
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        24,
+        24
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        40,
+        40
+      ],
+      [
+        48,
+        48
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        128,
+        128
+      ],
+      [
+        256,
+        256
+      ]
+    ],
+    "native_sizes": {
+      "look/wallpaper.png": [
+        1672,
+        941
+      ],
+      "look/wallpaper-evening.png": [
+        1672,
+        941
+      ],
+      "look/lockscreen.png": [
+        1672,
+        941
+      ],
+      "look/avatar.png": [
+        1254,
+        1254
+      ]
+    }
+  },
+  "visual_review": {
+    "avatar32_checked": true,
+    "avatar48_checked": true,
+    "avatar_colors": 4,
+    "content_radius": 321.9014,
+    "central70_percent_radius_limit": 358.4,
+    "clock_zone_low_detail": true,
+    "center_zone_low_detail": true,
+    "left30_percent_calm": true,
+    "same_door": true,
+    "evening_same_interior": true,
+    "animated_wallpaper": false,
+    "windows_installation_tested": false
+  }
+}

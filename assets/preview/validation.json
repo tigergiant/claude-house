@@ -1,0 +1,1507 @@
+{
+  "brand\\banner.png": {
+    "size": [
+      1600,
+      480
+    ],
+    "mode": "RGB"
+  },
+  "brand\\logo.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA"
+  },
+  "brand\\mascot-sheet.png": {
+    "size": [
+      2048,
+      2048
+    ],
+    "mode": "RGB"
+  },
+  "brand\\mascot.png": {
+    "size": [
+      2048,
+      2048
+    ],
+    "mode": "RGBA"
+  },
+  "brand\\social.png": {
+    "size": [
+      1280,
+      640
+    ],
+    "mode": "RGB"
+  },
+  "brand\\wordmark.png": {
+    "size": [
+      2000,
+      600
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\alternate.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        16,
+        1
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        24,
+        2
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        32,
+        2
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        48,
+        3
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        64,
+        4
+      ]
+    }
+  ],
+  "cursors\\arrow.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    }
+  ],
+  "cursors\\busy.ani": {
+    "frames": 12,
+    "steps": 60,
+    "average_ms": 80,
+    "native_frame_ms": [
+      66.6667,
+      83.3333
+    ],
+    "frame_sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "hotspot": [
+      16,
+      16
+    ]
+  },
+  "cursors\\help.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    }
+  ],
+  "cursors\\link.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        4,
+        3
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        6,
+        4
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        8,
+        6
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        12,
+        9
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        16,
+        12
+      ]
+    }
+  ],
+  "cursors\\move.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        16,
+        16
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        24,
+        24
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        32,
+        32
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        48,
+        48
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        64,
+        64
+      ]
+    }
+  ],
+  "cursors\\pen.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        3,
+        29
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        4,
+        44
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        6,
+        58
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        9,
+        87
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        12,
+        116
+      ]
+    }
+  ],
+  "cursors\\person.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    }
+  ],
+  "cursors\\pin.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        0,
+        0
+      ]
+    }
+  ],
+  "cursors\\precision.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        16,
+        16
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        24,
+        24
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        32,
+        32
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        48,
+        48
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        64,
+        64
+      ]
+    }
+  ],
+  "cursors\\size-nesw.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        16,
+        16
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        24,
+        24
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        32,
+        32
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        48,
+        48
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        64,
+        64
+      ]
+    }
+  ],
+  "cursors\\size-ns.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        16,
+        16
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        24,
+        24
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        32,
+        32
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        48,
+        48
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        64,
+        64
+      ]
+    }
+  ],
+  "cursors\\size-nwse.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        16,
+        16
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        24,
+        24
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        32,
+        32
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        48,
+        48
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        64,
+        64
+      ]
+    }
+  ],
+  "cursors\\size-we.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        16,
+        16
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        24,
+        24
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        32,
+        32
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        48,
+        48
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        64,
+        64
+      ]
+    }
+  ],
+  "cursors\\src\\alternate.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\arrow.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-00.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-01.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-02.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-03.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-04.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-05.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-06.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-07.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-08.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-09.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-10.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\busy-11.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\help.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\link.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\move.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\pen.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\person.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\pin.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\precision.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\size-nesw.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\size-ns.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\size-nwse.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\size-we.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\text.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\unavailable.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-00.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-01.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-02.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-03.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-04.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-05.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-06.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-07.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-08.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-09.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-10.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\src\\working-11.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "cursors\\text.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        16,
+        16
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        24,
+        24
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        32,
+        32
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        48,
+        48
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        64,
+        64
+      ]
+    }
+  ],
+  "cursors\\unavailable.cur": [
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": [
+        16,
+        16
+      ]
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": [
+        24,
+        24
+      ]
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": [
+        32,
+        32
+      ]
+    },
+    {
+      "size": [
+        96,
+        96
+      ],
+      "hotspot": [
+        48,
+        48
+      ]
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": [
+        64,
+        64
+      ]
+    }
+  ],
+  "cursors\\working.ani": {
+    "frames": 12,
+    "steps": 60,
+    "average_ms": 80,
+    "native_frame_ms": [
+      66.6667,
+      83.3333
+    ],
+    "frame_sizes": [
+      32,
+      48,
+      64,
+      96,
+      128
+    ],
+    "hotspot": [
+      0,
+      0
+    ]
+  },
+  "icons\\folder-docs-1024.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\folder-docs.ico": [
+    {
+      "size": [
+        16,
+        16
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        20,
+        20
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        24,
+        24
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        40,
+        40
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        256,
+        256
+      ],
+      "hotspot": null
+    }
+  ],
+  "icons\\folder-projects-1024.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\folder-projects.ico": [
+    {
+      "size": [
+        16,
+        16
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        20,
+        20
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        24,
+        24
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        40,
+        40
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        256,
+        256
+      ],
+      "hotspot": null
+    }
+  ],
+  "icons\\house-1024.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\house-128.png": {
+    "size": [
+      128,
+      128
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\house-16.png": {
+    "size": [
+      16,
+      16
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\house-20.png": {
+    "size": [
+      20,
+      20
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\house-24.png": {
+    "size": [
+      24,
+      24
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\house-256.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\house-32.png": {
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\house-40.png": {
+    "size": [
+      40,
+      40
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\house-48.png": {
+    "size": [
+      48,
+      48
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\house-64.png": {
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\house.ico": [
+    {
+      "size": [
+        16,
+        16
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        20,
+        20
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        24,
+        24
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        32,
+        32
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        40,
+        40
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        48,
+        48
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        128,
+        128
+      ],
+      "hotspot": null
+    },
+    {
+      "size": [
+        256,
+        256
+      ],
+      "hotspot": null
+    }
+  ],
+  "icons\\terminal-32.png": {
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\terminal-48.png": {
+    "size": [
+      48,
+      48
+    ],
+    "mode": "RGBA"
+  },
+  "icons\\terminal.png": {
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA"
+  },
+  "look\\avatar.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "P"
+  },
+  "look\\lockscreen.png": {
+    "size": [
+      3840,
+      2160
+    ],
+    "mode": "RGB"
+  },
+  "look\\wallpaper-evening.png": {
+    "size": [
+      3840,
+      2160
+    ],
+    "mode": "RGB"
+  },
+  "look\\wallpaper.png": {
+    "size": [
+      3840,
+      2160
+    ],
+    "mode": "RGB"
+  },
+  "preview\\cursors.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB"
+  },
+  "preview\\lockscreen-mock.png": {
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGB"
+  },
+  "preview\\overview.png": {
+    "size": [
+      2400,
+      1600
+    ],
+    "mode": "RGB"
+  },
+  "preview\\w13-link-before.png": {
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA"
+  },
+  "terminal\\background.png": {
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGB"
+  },
+  "preview\\w13-checks.png": {
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB"
+  }
+}
