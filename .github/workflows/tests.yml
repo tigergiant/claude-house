@@ -1,0 +1,33 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pester:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Pester 6.2.0 (the version the suite is verified with)
+        shell: powershell
+        run: Install-Module -Name Pester -RequiredVersion 6.2.0 -Force -SkipPublisherCheck -Scope CurrentUser
+
+      - name: Run the test suite in Windows PowerShell 5.1
+        shell: powershell
+        run: |
+          Import-Module Pester -RequiredVersion 6.2.0
+          $result = Invoke-Pester -Path .\tests -PassThru -Output Detailed
+          'passed=' + $result.PassedCount + ' failed=' + $result.FailedCount + ' skipped=' + $result.SkippedCount
+          if ($result.FailedCount -gt 0) { exit 1 }
+
+      - name: Secret scan
+        shell: powershell
+        run: .\tools\Invoke-SecretScan.ps1 -History

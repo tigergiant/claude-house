@@ -1,13 +1,58 @@
-# claude-house
+<p align="center">
+  <img src="assets/brand/banner.png" alt="Hermi the hermit crab reading a book in its little house on a sunny desk" width="100%">
+</p>
 
-A home for Claude Code on Windows: a Hyper-V virtual machine with exactly one network
-exit, your chosen host folders shared in, and house rules for Claude.
+<h1 align="center">claude-house</h1>
+
+<p align="center">
+  <b>A separate Windows computer for Claude Code, living inside your PC.</b><br>
+  Your own agent builds it step by step. One way out to the internet. Your folders, shared in.
+</p>
+
+<p align="center">
+  <a href="../../actions/workflows/tests.yml"><img src="../../actions/workflows/tests.yml/badge.svg" alt="tests"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-C96442" alt="MIT licence"></a>
+  <img src="https://img.shields.io/badge/host-Windows%2011%20Pro%20%7C%20Enterprise%20%7C%20Education-3D3929" alt="Windows 11 Pro, Enterprise or Education">
+  <img src="https://img.shields.io/badge/Hyper--V-Gen%202%20%2B%20vTPM-3D3929" alt="Hyper-V Generation 2 with a virtual TPM">
+  <img src="https://img.shields.io/badge/PowerShell-5.1-3D3929" alt="Windows PowerShell 5.1">
+  <img src="https://img.shields.io/badge/built%20by-Claude%20Code-C96442?logo=claude&logoColor=white" alt="Built by Claude Code">
+  <img src="https://img.shields.io/badge/status-early%20preview-F0B429" alt="Status: early preview">
+</p>
+
+<p align="center"><b>English</b> · <a href="README.zh-CN.md">简体中文</a></p>
 
 You do not install anything from us. Your coding agent reads the runbook and builds the
 house step by step. Every step has a check that proves it is done.
 
-> **Status: pre-alpha, under construction. Not released.**
+> **Status: early preview.** Built and checked end to end on a real PC, in English and Chinese Windows, but still young: expect rough edges and tell us about them in Issues.
 > Not affiliated with or endorsed by Anthropic. "Claude" is a trademark of Anthropic, PBC.
+
+## What you get
+
+- 🏠 **A whole Windows 11 desktop for Claude.** Claude Code, the Claude app, Git, Python, Node.js, GitHub CLI and VS Code are installed for you, and Claude is pinned to the taskbar.
+- 🚪 **One way out.** The VM has no route to the internet of its own. Everything leaves through one gate: the proxy app you already run on your PC.
+- 📁 **Your folders, same paths.** Pick host folders to share; inside the house they appear under the very same paths, read-only or writable as you choose.
+- 🛡️ **House rules.** Hooks stop the classic slips: searching a whole shared drive, deleting on a share, common Windows command mistakes.
+- ✅ **Every step proves itself.** `house check` and `house doctor` tell you exactly what is done and what is not, and point to the fix.
+- 🦀 **A warm place to work.** Wallpaper, pointers, icons and a bilingual **Start here** page, starring Hermi the hermit crab.
+
+## A look inside
+
+<table>
+  <tr>
+    <td width="50%"><img src="assets/preview/welcome-en.png" alt="The Start here welcome page in English"></td>
+    <td width="50%"><img src="assets/preview/welcome-zh.png" alt="The same welcome page switched to Chinese"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Start here</b>: the first page on the house desktop</td>
+    <td align="center">One click switches it to 中文</td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="assets/preview/overview.png" alt="Hermi art collection: mascot, day and evening wallpapers, sign-in screen, icons and wordmark" width="90%"><br>
+  <sub>Every picture in the house. See <a href="assets/ART.md">assets/ART.md</a> for where they came from.</sub>
+</p>
 
 ## Requirements
 
