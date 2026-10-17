@@ -5,8 +5,9 @@
 <h1 align="center">claude-house</h1>
 
 <p align="center">
-  <b>A separate Windows computer for Claude Code, living inside your PC.</b><br>
-  Your own agent builds it step by step. One way out to the internet. Your folders, shared in.
+  <b>Let Claude Code work freely on Windows without handing it your whole PC.</b><br>
+  A separate Windows 11 computer for Claude, living inside your PC as a Hyper-V VM.<br>
+  Your own agent builds it step by step. One way out to the internet. Only the folders you choose, shared in.
 </p>
 
 <p align="center">
@@ -26,6 +27,18 @@ house step by step. Every step has a check that proves it is done.
 
 > **Status: early preview.** Built and checked end to end on a real PC, in English and Chinese Windows, but still young: expect rough edges and tell us about them in Issues.
 > Not affiliated with or endorsed by Anthropic. "Claude" is a trademark of Anthropic, PBC.
+
+## Why
+
+Approving every command gets old fast, so many people end up running Claude Code with
+auto-accept or `--dangerously-skip-permissions`. On your own PC that means one bad command can
+touch everything you have. On native Windows, Claude Code's own docs point you to a container,
+a VM or WSL2 for sandboxing; this repo is the VM option, built for people who want to keep
+working in Windows.
+
+Inside the house Claude has its own desktop, its own disk and its own tools. It can reach only
+the host folders you share (read-only or writable, your call) and only the internet through
+your proxy. If something goes wrong, the damage stays in the house.
 
 ## What you get
 
@@ -117,11 +130,17 @@ The VM sits on an internal switch only, the house firewall blocks inbound traffi
 
 There are good ways to run Claude Code in a sandbox. Pick by what you need:
 
-- **You want a Linux environment:** use Docker Sandboxes or one of the Linux/macOS VM tools (for example trailofbits/coop, or the QEMU and Nix based `claude-vm` projects that start a fresh VM per session). They are lighter than a full Windows VM.
-- **You want a throwaway Windows session:** look at Hyper-V based disposable sandboxes such as agent-sandbox-vm.
-- **You want a long-lived Windows workstation for Claude** where your host paths work unchanged inside, the only way out is one gate to the proxy app you already run, and your own agent builds and checks every step: that is claude-house.
+| Option | Environment | Lives on? | Your host paths inside | Internet | Best for |
+|---|---|---|---|---|---|
+| Docker / dev containers | Linux | Per project | Mounted folders, Linux paths | Container network | Linux toolchains, light weight |
+| WSL2 | Linux | Yes | `/mnt/c/...` style paths | Shares the host network | Linux work on a Windows PC |
+| Windows Sandbox | Windows | No, wiped on close | Mapped folders only | Host network | Trying something once |
+| Cloud VM | Your choice | Yes, billed | No, copy files up | Cloud network | Running when your PC is off |
+| **claude-house** | **Windows 11** | **Yes** | **Same paths as on the host** | **One gate: your proxy only** | **A long-lived Windows workstation for Claude** |
 
-Claude Code's documentation recommends a container, VM or WSL2 for sandboxing on native Windows; this repo is one way to do the VM option.
+- **You want a Linux environment:** use Docker Sandboxes or one of the Linux/macOS VM tools (for example trailofbits/coop, or the QEMU and Nix based `claude-vm` projects that start a fresh VM per session). They are lighter than a full Windows VM.
+- **You want a throwaway Windows session:** look at Windows Sandbox or Hyper-V based disposable sandboxes such as agent-sandbox-vm.
+- **You want a long-lived Windows workstation for Claude** where your host paths work unchanged inside, the only way out is one gate to the proxy app you already run, and your own agent builds and checks every step: that is claude-house.
 
 ## License
 

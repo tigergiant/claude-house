@@ -5,8 +5,9 @@
 <h1 align="center">claude-house</h1>
 
 <p align="center">
-  <b>给 Claude Code 一台独立的 Windows 电脑，就装在你的 PC 里。</b><br>
-  由你自己的 agent 一步步搭起来。上网只走一个出口。你的文件夹共享进去。
+  <b>让 Claude Code 在 Windows 上放手干活，又不用把整台电脑交给它。</b><br>
+  给 Claude 一台独立的 Windows 11 电脑，以 Hyper-V 虚拟机的形式装在你的 PC 里。<br>
+  由你自己的 agent 一步步搭起来。上网只走一个出口。只共享你选的文件夹。
 </p>
 
 <p align="center">
@@ -27,6 +28,12 @@
 > 本项目与 Anthropic 无关，也没有得到 Anthropic 的认可。"Claude" 是 Anthropic, PBC 的商标。
 
 中文 ISO 也能用：在配置里把 `House.Locale` 设为 `zh-CN`，`House.ImageName` 填中文版的版本名（例如 `Windows 11 专业版`），详见 [runbook/01-blueprint.md](runbook/01-blueprint.md)。虚拟机默认是英文界面、洛杉矶时区；想用北京时间，就把 `House.TimeZone` 改成 `'China Standard Time'`。
+
+## 为什么要它
+
+每条命令都点一次"允许"，很快就烦了，于是很多人干脆给 Claude Code 开自动接受，或者加 `--dangerously-skip-permissions` 跑。放在自己电脑上，这意味着一条错命令就能碰到你所有的东西。在原生 Windows 上，Claude Code 官方文档建议用容器、虚拟机或 WSL2 做沙箱；本仓库走的是虚拟机这条路，给想继续在 Windows 里干活的人用。
+
+在小屋里，Claude 有自己的桌面、自己的磁盘、自己的工具。它只能碰到你共享进来的主机文件夹（只读还是可写由你定），上网也只能走你的代理。真出了事，损失关在小屋里。
 
 ## 你会得到什么
 
@@ -118,11 +125,17 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\house.ps1 preflight
 
 用沙箱跑 Claude Code 有不少好办法。按你的需要选：
 
-- **想要 Linux 环境：** 用 Docker Sandboxes，或者某个 Linux/macOS 虚拟机工具（比如 trailofbits/coop，或者基于 QEMU 和 Nix、每次会话都启动一台新虚拟机的那几个 `claude-vm` 项目）。它们比一整台 Windows 虚拟机轻。
-- **想要用完就扔的 Windows 会话：** 看看基于 Hyper-V 的一次性沙箱，比如 agent-sandbox-vm。
-- **想给 Claude 一台长期使用的 Windows 工作站：** 主机路径在里面照常能用，唯一的出口是通往你已有代理软件的那道门，每一步都由你自己的 agent 搭建和检查。这就是 claude-house。
+| 方案 | 环境 | 长期保留？ | 主机路径在里面 | 上网 | 最适合 |
+|---|---|---|---|---|---|
+| Docker / 开发容器 | Linux | 按项目 | 挂载目录，Linux 路径 | 容器网络 | Linux 工具链、轻量 |
+| WSL2 | Linux | 是 | `/mnt/c/...` 这类路径 | 共用主机网络 | 在 Windows 电脑上做 Linux 的活 |
+| Windows 沙盒 | Windows | 否，关掉就清空 | 只有映射的文件夹 | 主机网络 | 临时试一下 |
+| 云主机 | 任选 | 是，按时计费 | 没有，要把文件传上去 | 云端网络 | 电脑关机时也要跑 |
+| **claude-house** | **Windows 11** | **是** | **和主机上同一个路径** | **只有一道门：你的代理** | **给 Claude 一台长期的 Windows 工作站** |
 
-Claude Code 的文档建议，在原生 Windows 上用容器、虚拟机或 WSL2 做沙箱；本仓库是虚拟机这条路的一种做法。
+- **想要 Linux 环境：** 用 Docker Sandboxes，或者某个 Linux/macOS 虚拟机工具（比如 trailofbits/coop，或者基于 QEMU 和 Nix、每次会话都启动一台新虚拟机的那几个 `claude-vm` 项目）。它们比一整台 Windows 虚拟机轻。
+- **想要用完就扔的 Windows 会话：** 看看 Windows 沙盒，或者基于 Hyper-V 的一次性沙箱，比如 agent-sandbox-vm。
+- **想给 Claude 一台长期使用的 Windows 工作站：** 主机路径在里面照常能用，唯一的出口是通往你已有代理软件的那道门，每一步都由你自己的 agent 搭建和检查。这就是 claude-house。
 
 ## 许可证
 
