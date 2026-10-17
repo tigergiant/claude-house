@@ -70,7 +70,7 @@ your proxy. If something goes wrong, the damage stays in the house.
 
 ## Requirements
 
-A physical Windows 11 Pro, Enterprise or Education PC (x64), 16 GB of RAM, hardware virtualization turned on, and about 100 GB free on an NTFS or ReFS drive. Windows Home, ARM, and a PC that is itself a virtual machine cannot host the house.
+A physical Windows 11 Pro, Enterprise or Education PC (x64), 16 GB of RAM (the VM itself takes a fixed 8 GB, the rest stays with you), hardware virtualization turned on, and about 100 GB free on an NTFS or ReFS drive. Windows Home, ARM, and a PC that is itself a virtual machine cannot host the house.
 
 The VM runs its own copy of Windows 11 and needs its own Windows licence. This project sets no product key. Until you activate it, Windows in the VM shows an "Activate Windows" watermark and greys out some Personalization settings. That does not affect Claude.
 
