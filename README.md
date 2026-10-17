@@ -17,6 +17,7 @@
   <img src="https://img.shields.io/badge/Hyper--V-Gen%202%20%2B%20vTPM-3D3929" alt="Hyper-V Generation 2 with a virtual TPM">
   <img src="https://img.shields.io/badge/PowerShell-5.1-3D3929" alt="Windows PowerShell 5.1">
   <img src="https://img.shields.io/badge/built%20by-Claude%20Code-C96442?logo=claude&logoColor=white" alt="Built by Claude Code">
+  <a href="https://linux.do"><img src="https://img.shields.io/badge/community-LINUX%20DO-FFB003" alt="Community: LINUX DO"></a>
   <img src="https://img.shields.io/badge/status-early%20preview-F0B429" alt="Status: early preview">
 </p>
 

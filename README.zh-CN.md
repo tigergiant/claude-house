@@ -17,6 +17,7 @@
   <img src="https://img.shields.io/badge/Hyper--V-Gen%202%20%2B%20vTPM-3D3929" alt="Hyper-V 第 2 代虚拟机，带虚拟 TPM">
   <img src="https://img.shields.io/badge/PowerShell-5.1-3D3929" alt="Windows PowerShell 5.1">
   <img src="https://img.shields.io/badge/built%20by-Claude%20Code-C96442?logo=claude&logoColor=white" alt="由 Claude Code 搭建">
+  <a href="https://linux.do"><img src="https://img.shields.io/badge/community-LINUX%20DO-FFB003" alt="社区：LINUX DO"></a>
   <img src="https://img.shields.io/badge/status-early%20preview-F0B429" alt="状态：早期预览">
 </p>
 
