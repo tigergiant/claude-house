@@ -1,7 +1,7 @@
 ---
 id: house-rules
 title: Install the house rules and hooks
-order: 12
+order: 13
 requires: [guest-shares]
 runs_on: guest
 admin: false

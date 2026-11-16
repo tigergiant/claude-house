@@ -2850,7 +2850,7 @@ Describe 'shares check' {
         $result.evidence.smbfirewall | Should -Be $true
         @($result.evidence.shareNames) | Should -Contain 'ziliao'
         $result.detail | Should -Not -Match 'not-a-password'
-        $result.fix | Should -Be 'runbook/10-shares.md#if-it-fails'
+        $result.fix | Should -Be 'runbook/11-shares.md#if-it-fails'
     }
 
     It 'fails when the blueprint was not loaded' {
@@ -3131,7 +3131,7 @@ Describe 'guest-shares check' {
         $script:guestBag.Args[0] | Should -Be '192.0.2.1'
         $script:guestBag.Args[1] | Should -Be 'fixtureuser'
         $script:guestBag.Args[2] | Should -Match 'notes'
-        $result.fix | Should -Be 'runbook/11-guest-shares.md#if-it-fails'
+        $result.fix | Should -Be 'runbook/12-guest-shares.md#if-it-fails'
     }
 
     It 'fails hostname when house-host does not resolve to HostIP' {
@@ -3322,11 +3322,11 @@ Describe 'guest-shares check' {
         $result.detail | Should -Match 'credential rejected'
     }
 
-    It 'keeps the rendered step 11 script block ASCII and free of blueprint values' {
+    It 'keeps the rendered step 12 script block ASCII and free of blueprint values' {
         $config = New-BlueprintConfig
         $config.House.UserName = 'fixtureuser'
         $config.Shares = New-GuestShareBlueprint
-        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\11-guest-shares.md'))
+        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\12-guest-shares.md'))
         $rendered = Format-HousePage -Content $page -Config $config
         $blocks = @(Get-HouseScriptBlocks -Text $rendered)
         $blocks.Count | Should -Be 1
@@ -3776,7 +3776,7 @@ Describe 'house-rules check' {
         $result.evidence.claudemd | Should -Be $true
         $result.evidence.roots | Should -Be $true
         $result.evidence.hooks | Should -Be $true
-        $result.fix | Should -Be 'runbook/12-house-rules.md#if-it-fails'
+        $result.fix | Should -Be 'runbook/13-house-rules.md#if-it-fails'
         $result.detail | Should -Not -Match 'notes the human wrote'
     }
 
@@ -3851,11 +3851,11 @@ Describe 'house-rules check' {
         ($result | ConvertTo-Json -Depth 6).Contains('notes the human wrote') | Should -Be $false
     }
 
-    It 'keeps the rendered step 12 script block ASCII and free of placeholders' {
+    It 'keeps the rendered step 14 script block ASCII and free of placeholders' {
         $config = New-HouseRulesConfig
         $folder = 'D:\' + [char]0x8D44 + [char]0x6599
         $config.Shares = @(@{ Name = 'ziliao'; HostPath = $folder; Writable = $true; Mirror = $true })
-        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\12-house-rules.md'))
+        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\13-house-rules.md'))
         $rendered = Format-HousePage -Content $page -Config $config
         $blocks = @(Get-HouseScriptBlocks -Text $rendered)
         $blocks.Count | Should -Be 1
@@ -3876,7 +3876,7 @@ Describe 'house-rules check' {
         $result = & $script:houseRulesCheck -Context (New-HouseRulesContext -Config $config -Facts $facts)
         $result.ok | Should -Be $true
         $result.evidence.winshell | Should -Be $true
-        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\12-house-rules.md'))
+        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\13-house-rules.md'))
         $page.Contains('Get-HouseHookMatcher') | Should -Be $true
         $page.Contains('timeout = 10') | Should -Be $true
         $page.Contains('core.longpaths true') | Should -Be $true
@@ -4013,7 +4013,7 @@ Describe 'claude-login check' {
         $result.evidence.apiKey | Should -Be $false
         $result.evidence.claude | Should -Be $true
         $result.evidence.claudeVersion | Should -Be '1.2.3'
-        $result.fix | Should -Be 'runbook/14-claude-login.md#if-it-fails'
+        $result.fix | Should -Be 'runbook/15-claude-login.md#if-it-fails'
     }
 
     It 'passes when only the API key variable is set and drops any leaked value' {
@@ -4721,7 +4721,7 @@ Describe 'look check' {
         $result.evidence.smooth | Should -Be $true
         $result.evidence.welcome | Should -Be $true
         $result.evidence.lookTheme | Should -Be 'light'
-        $result.fix | Should -Be 'runbook/13-look.md#if-it-fails'
+        $result.fix | Should -Be 'runbook/14-look.md#if-it-fails'
     }
 
     It 'fails theme when a Personalize value differs' {
@@ -4812,7 +4812,7 @@ Describe 'look check' {
 
     It 'writes and reads share shortcut targets through the Unicode Shell.Application' {
         # WScript.Shell threw on a Chinese folder name on the English drill guest (2026-10-13) and reads it back as ??.
-        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\13-look.md'))
+        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\14-look.md'))
         $check = [System.IO.File]::ReadAllText((Join-Path $script:repo 'checks\look.ps1'))
         $page | Should -Not -Match 'TargetPath = \[string\]\$shortcutRow\.target'
         $page | Should -Match '\$lnk\.Path = \[string\]\$shortcutRow\.target'
@@ -4820,8 +4820,8 @@ Describe 'look check' {
         $check | Should -Match 'target = \[string\]\$shortcutLink\.Path'
     }
 
-    It 'removes the Widgets app in step 13 only when Windows refuses the news policy' {
-        $text = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\13-look.md'))
+    It 'removes the Widgets app in step 14 only when Windows refuses the news policy' {
+        $text = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\14-look.md'))
         $text | Should -Match "-is \[System\.UnauthorizedAccessException\]"
         $text | Should -Match "Remove-AppxPackage -AllUsers"
         $text | Should -Match "MicrosoftWindows\.Client\.WebExperience"
@@ -5106,9 +5106,9 @@ Describe 'look check' {
         $result2.evidence.welcome | Should -Be $false
     }
 
-    It 'keeps the rendered step 13 script block ASCII and free of placeholders' {
+    It 'keeps the rendered step 14 script block ASCII and free of placeholders' {
         $config = New-BlueprintConfig
-        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\13-look.md'))
+        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\14-look.md'))
         $rendered = Format-HousePage -Content $page -Config $config
         $blocks = @(Get-HouseScriptBlocks -Text $rendered)
         # Four small first-sign-in calls, then the one call that applies the look.
@@ -5122,8 +5122,8 @@ Describe 'look check' {
         }
     }
 
-    It 'signs the VM user in once before step 13 writes the look, and clears automatic sign-in in every case' {
-        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\13-look.md'))
+    It 'signs the VM user in once before step 14 writes the look, and clears automatic sign-in in every case' {
+        $page = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\14-look.md'))
         $doAt = $page.IndexOf('## Do')
         $do = $page.Substring($doAt, $page.IndexOf('## Verify') - $doAt)
         $firstSignIn = $do.IndexOf('Active Setup\Installed Components')
@@ -5141,17 +5141,20 @@ Describe 'look check' {
         $page | Should -Match '(?m)^reboot: true'
     }
 
-    It 'lists 15 steps with look at 13 and claude-login at 14' {
+    It 'lists 16 steps with look at 14 and claude-login at 15' {
         $house = Join-Path $script:repo 'house.ps1'
         $output = & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $house --json guide
         $LASTEXITCODE | Should -Be 0
         $json = @($output | Where-Object { $_ -match '\{' }) -join "`n" | ConvertFrom-Json
-        @($json.steps).Count | Should -Be 15
-        $json.steps[13].id | Should -Be 'look'
-        $json.steps[13].order | Should -Be 13
-        $json.steps[14].id | Should -Be 'claude-login'
+        @($json.steps).Count | Should -Be 16
+        $json.steps[10].id | Should -Be 'persona'
+        $json.steps[10].order | Should -Be 10
+        $json.steps[10].requires | Should -Contain 'tools'
+        $json.steps[14].id | Should -Be 'look'
         $json.steps[14].order | Should -Be 14
-        $json.steps[14].requires | Should -Contain 'look'
+        $json.steps[15].id | Should -Be 'claude-login'
+        $json.steps[15].order | Should -Be 15
+        $json.steps[15].requires | Should -Contain 'look'
     }
 }
 
@@ -5224,5 +5227,90 @@ Describe 'console settings' {
             $path | Should -Match 'vmconnect\.rdp\.AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEEEEEE\.config'
             Should -Invoke Set-HouseConsoleSettingsText -Times 0
         }
+    }
+}
+
+Describe 'persona check' {
+    BeforeAll {
+        $script:personaCheck = Join-Path $script:repo 'checks\persona.ps1'
+
+        function script:New-PersonaContext {
+            param($Config, $Guest, [switch]$Throw)
+            $ctx = New-BlueprintContext -Config $Config
+            $bag = @{ Probe = ''; Args = @(); Guest = $Guest }
+            $script:personaBag = $bag
+            if ($Throw) {
+                $ctx.InvokeGuest = { param($ScriptBlock, $ArgumentList) throw 'credential rejected' }
+            }
+            else {
+                $ctx.InvokeGuest = {
+                    param($ScriptBlock, $ArgumentList)
+                    $bag.Probe = $ScriptBlock.ToString()
+                    $bag.Args = @($ArgumentList)
+                    return $bag.Guest
+                }.GetNewClosure()
+            }
+            return $ctx
+        }
+
+        function script:New-PersonaSwitchRow {
+            param([string]$Name, [string]$Value)
+            return [pscustomobject]@{ name = $Name; value = $Value; ok = ($Value -eq '1') }
+        }
+
+        function script:New-PersonaGuest {
+            param([string]$Value1, [string]$Value2, [string]$Value3, [string]$Value4, [string]$Culture, $GeoId, [string]$Timezone)
+            return [pscustomobject]@{
+                switches = @(
+                    (New-PersonaSwitchRow -Name 'DISABLE_TELEMETRY' -Value $Value1),
+                    (New-PersonaSwitchRow -Name 'DISABLE_ERROR_REPORTING' -Value $Value2),
+                    (New-PersonaSwitchRow -Name 'DO_NOT_TRACK' -Value $Value3),
+                    (New-PersonaSwitchRow -Name 'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC' -Value $Value4)
+                )
+                culture  = $Culture
+                geoId    = $GeoId
+                timezone = $Timezone
+                error    = $null
+            }
+        }
+    }
+
+    It 'passes when every switch is on and culture geo and timezone match the blueprint' {
+        $config = New-BlueprintConfig
+        $guest = New-PersonaGuest -Value1 '1' -Value2 '1' -Value3 '1' -Value4 '1' -Culture 'en-US' -GeoId 244 -Timezone 'UTC'
+        $result = & $script:personaCheck -Context (New-PersonaContext -Config $config -Guest $guest)
+        $result.id | Should -Be 'persona'
+        $result.ok | Should -Be $true
+        $result.detail | Should -Be 'persona aligned'
+        $result.evidence.telemetry | Should -Be $true
+        $result.evidence.errorReporting | Should -Be $true
+        $result.evidence.doNotTrack | Should -Be $true
+        $result.evidence.nonessential | Should -Be $true
+        $result.evidence.cultureOk | Should -Be $true
+        $result.evidence.geoOk | Should -Be $true
+        $result.evidence.timezoneOk | Should -Be $true
+        $script:personaBag.Args[0] | Should -Be 'en-US'
+        $script:personaBag.Args[1] | Should -Be 'UTC'
+        $result.fix | Should -Be 'runbook/10-persona.md#if-it-fails'
+    }
+
+    It 'fails with the switch names and drifted culture in the detail' {
+        $config = New-BlueprintConfig
+        $guest = New-PersonaGuest -Value1 '' -Value2 '1' -Value3 '' -Value4 '1' -Culture 'zh-CN' -GeoId 244 -Timezone 'Pacific Standard Time'
+        $result = & $script:personaCheck -Context (New-PersonaContext -Config $config -Guest $guest)
+        $result.ok | Should -Be $false
+        $result.detail | Should -Match 'telemetry'
+        $result.detail | Should -Match 'doNotTrack'
+        $result.detail | Should -Match 'culture'
+        $result.evidence.telemetry | Should -Be $false
+        $result.evidence.cultureOk | Should -Be $false
+        $result.evidence.geoOk | Should -Be $true
+    }
+
+    It 'keeps the InvokeGuest message when the guest call throws' {
+        $config = New-BlueprintConfig
+        $result = & $script:personaCheck -Context (New-PersonaContext -Config $config -Guest $null -Throw)
+        $result.ok | Should -Be $false
+        $result.detail | Should -Match 'credential rejected'
     }
 }

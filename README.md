@@ -47,6 +47,7 @@ your proxy. If something goes wrong, the damage stays in the house.
 - 🚪 **One way out.** The VM has no route to the internet of its own. Everything leaves through one gate: the proxy app you already run on your PC.
 - 📁 **Your folders, same paths.** Pick host folders to share; inside the house they appear under the very same paths, read-only or writable as you choose.
 - 🛡️ **House rules.** Hooks stop the classic slips: searching a whole shared drive, deleting on a share, common Windows command mistakes.
+- 🔇 **Reporting muted.** One step aligns the house's culture and time zone with your blueprint and sets Claude's four documented reporting switches (`DISABLE_TELEMETRY`, `DISABLE_ERROR_REPORTING`, `DO_NOT_TRACK`, `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC`) machine-wide.
 - ✅ **Every step proves itself.** `house check` and `house doctor` tell you exactly what is done and what is not, and point to the fix.
 - 🦀 **A warm place to work.** Wallpaper, pointers, icons and a bilingual **Start here** page, starring Hermi the hermit crab.
 
@@ -117,7 +118,7 @@ Names in `code` are what the runbook creates; values in brackets come from your 
 | 6 | A shortcut `<House.Name>.lnk` on the public desktop (`C:\Users\Public\Desktop`) that opens the VM console, its icon copied to `C:\ProgramData\claude-house\<House.Name>\house.ico`, and a console settings file `%APPDATA%\Microsoft\Windows\Hyper-V\Client\1.0\vmconnect.rdp.<VM id>.config` for the user who ran the step. |
 | 10 | A local Windows account `house-share` (not an administrator, password never expires); its password is kept only in `C:\ProgramData\claude-house\<House.Name>\share-user.cred.xml`. One SMB share per entry in `Shares`, named as its `Name`, with `Everyone` removed and `house-share` given Read or Change. On each shared folder, an NTFS entry for `house-share` (Read & execute, or Modify when writable) that subfolders inherit. A shared folder that did not exist is created. A Windows Firewall inbound rule `claude-house SMB` allows TCP 445 from the VM address only. |
 
-Steps 7–9 and 11–14 change only the inside of the VM. To remove everything again, follow [runbook/uninstall.md](runbook/uninstall.md).
+Steps 7–10 and 11–15 change only the inside of the VM. To remove everything again, follow [runbook/uninstall.md](runbook/uninstall.md).
 
 ## First sign-in
 

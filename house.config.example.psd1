@@ -15,6 +15,12 @@
         TimeZone  = 'Pacific Standard Time'       # any id from Get-TimeZone -ListAvailable
     }
 
+    # Hardware identity of the guest. A pinned MAC keeps one stable hardware
+    # identity across re-creations; leave it empty for Hyper-V's dynamic MAC.
+    Identity = @{
+        VmMacAddress = ''                          # e.g. '00-15-5D-10-20-30'; empty = dynamic
+    }
+
     # One gate: the only way the house reaches any network besides the host's shared folders.
     Network = @{
         SwitchName   = 'HouseNet'                 # internal switch, never NAT

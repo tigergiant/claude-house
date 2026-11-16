@@ -109,11 +109,12 @@ Rules:
 | 7 | `guest-network` | guest | static IP (gateway = host IP, with no NAT behind it); firewall inbound default **Block**, outbound default **Allow**; no public DNS servers; proxy set the same in env vars, WinHTTP and user settings, with the host IP in `NO_PROXY` |
 | 8 | `one-way-out` | guest | **negative proof:** <br>• direct TCP to a public IP fails; <br>• DNS lookup of a public name fails; <br>• no second adapter (VPN, Tailscale, Wi-Fi passthrough) exists; <br>**positive proof:** HTTPS to `api.anthropic.com` through the gate returns an HTTP status |
 | 9 | `tools` | guest | Git, Claude Code (official installer) and optional Python/Node, installed through the gate |
-| 10 | `shares` | host | for each shared folder: SMB share, a dedicated non-admin account, read-only unless marked writable; host inbound firewall allows SMB (445) only from the VM IP |
-| 11 | `guest-shares` | guest | each share is reachable as the VM user through the host name `house-host`; mirrored host paths resolve inside the VM; read-only shares refuse writes |
-| 12 | `house-rules` | guest | CLAUDE.md with the share address book and rules, plus selected hooks, installed |
-| 13 | `look` | guest | warm light theme, wallpaper, accent, quiet desktop and Windows Terminal scheme (or skipped when `Look.Theme` is `none`) |
-| 14 | `claude-login` | guest | `human: true`. The person signs in to Claude Code inside the VM, and the check confirms it |
+| 10 | `persona` | guest | culture, home region and time zone match the blueprint; the four Claude reporting switches are set machine-wide |
+| 11 | `shares` | host | for each shared folder: SMB share, a dedicated non-admin account, read-only unless marked writable; host inbound firewall allows SMB (445) only from the VM IP |
+| 12 | `guest-shares` | guest | each share is reachable as the VM user through the host name `house-host`; mirrored host paths resolve inside the VM; read-only shares refuse writes |
+| 13 | `house-rules` | guest | CLAUDE.md with the share address book and rules, plus selected hooks, installed |
+| 14 | `look` | guest | warm light theme, wallpaper, accent, quiet desktop and Windows Terminal scheme (or skipped when `Look.Theme` is `none`) |
+| 15 | `claude-login` | guest | `human: true`. The person signs in to Claude Code inside the VM, and the check confirms it |
 
 Daily use and removal are pages, not steps:
 
@@ -168,6 +169,12 @@ Opt-in PreToolUse hooks:
 - `bounded-search`: blocks unbounded recursive search at a share root and prints the scoped command.
 - `share-delete-guard`: blocks recursive delete at a share root.
 - `windows-guard`: blocks common Windows command mistakes and prints the correct form, for example cmd commands, `nul`, `/c`-style switches or Windows paths in Git Bash, `chcp`, PowerShell code that does not parse in Windows PowerShell 5.1, `2>&1` on a program, aliases such as `curl` and `where`, reading and rewriting one file in a 5.1 pipeline, writing a reserved file name or a non-ASCII `.ps1`, and recursive delete of a folder that holds a junction or symbolic link. Unlike the other two (Grep, Glob, Bash, PowerShell), it watches Bash, PowerShell, Write and Edit.
+
+### Persona and telemetry
+
+Step 10 (`persona`) keeps the guest's presentation aligned with its exit: culture, home region and time zone come from the blueprint, and four documented Claude Code switches (`DISABLE_TELEMETRY`, `DISABLE_ERROR_REPORTING`, `DO_NOT_TRACK`, `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC`) are written machine-wide. The optional `Identity.VmMacAddress` pins the adapter MAC so a rebuilt house keeps one stable hardware identity.
+
+These are switches the official client honours, verified by reading the shipped binaries rather than forum posts: the Claude desktop app attaches the OS time zone and locale from `Intl` to its crash reports and sends GrowthBook experiment events with a device id; Claude Code reads the Windows machine GUID and embeds a Bun crash-feedback collector; non-essential traffic is gated by exactly these environment variables. The switches mute what the client can mute. The API traffic itself still carries standard SDK headers, and conversations remain visible to Anthropic under its terms — step 10 removes avoidable contradictions and unneeded reporting; it does not claim anonymity.
 
 ## 10. Agent operating protocol (AGENTS.md, summary)
 

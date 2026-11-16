@@ -1,7 +1,7 @@
 ---
 id: claude-login
 title: Sign in to Claude Code inside the house
-order: 14
+order: 15
 requires: [look]
 runs_on: guest
 admin: false

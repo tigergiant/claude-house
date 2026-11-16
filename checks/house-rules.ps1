@@ -1,7 +1,7 @@
 param([hashtable]$Context)
 $ErrorActionPreference = 'Stop'
 
-$fix = 'runbook/12-house-rules.md#if-it-fails'
+$fix = 'runbook/13-house-rules.md#if-it-fails'
 
 function ConvertTo-HouseRulesResult {
     param(

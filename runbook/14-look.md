@@ -1,7 +1,7 @@
 ---
 id: look
 title: Give the guest a warm light theme
-order: 13
+order: 14
 requires: [house-rules]
 runs_on: guest
 admin: false

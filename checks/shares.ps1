@@ -1,7 +1,7 @@
 param([hashtable]$Context)
 $ErrorActionPreference = 'Stop'
 
-$fix = 'runbook/10-shares.md#if-it-fails'
+$fix = 'runbook/11-shares.md#if-it-fails'
 
 function ConvertTo-SharesResult {
     param(

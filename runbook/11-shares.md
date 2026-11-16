@@ -1,7 +1,7 @@
 ---
 id: shares
 title: Share the host folders into the house
-order: 10
+order: 11
 requires: [tools]
 runs_on: host
 admin: true

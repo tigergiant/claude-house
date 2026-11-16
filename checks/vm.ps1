@@ -30,7 +30,9 @@ function ConvertTo-VmEvidence {
         [bool]$Disk,
         [bool]$OneAdapter,
         [bool]$Switch,
-        [bool]$Checkpoints
+        [bool]$Checkpoints,
+        [bool]$MacConfigured,
+        [bool]$MacOk
     )
     return [pscustomobject]@{
         exists      = $Exists
@@ -44,6 +46,8 @@ function ConvertTo-VmEvidence {
         oneadapter  = $OneAdapter
         switch      = $Switch
         checkpoints = $Checkpoints
+        macconfigured = $MacConfigured
+        macok       = $MacOk
     }
 }
 
@@ -146,6 +150,24 @@ if ($oneadapter) {
     $switch = ([string]$adapters[0].SwitchName -eq [string]$network.SwitchName)
 }
 
+# Optional static MAC from Identity.VmMacAddress. Empty or missing means the
+# blueprint did not pin one, so nothing is required and the check cannot fail.
+$identity = Get-HousePropertyValue -Object $config -Name 'Identity'
+$wantedMac = ''
+if ($null -ne $identity) { $wantedMac = [string](Get-HousePropertyValue -Object $identity -Name 'VmMacAddress') }
+$macConfigured = ($wantedMac.Trim() -ne '')
+$macOk = $true
+if ($macConfigured) {
+    function Get-HouseMacHex {
+        param([string]$Value)
+        $stripped = ([string]$Value) -replace '[-:.\s]', ''
+        return $stripped.ToUpperInvariant()
+    }
+    $actualMac = ''
+    if ($oneadapter) { $actualMac = Get-HouseMacHex -Value ([string]$adapters[0].MacAddress) }
+    $macOk = ($actualMac -eq (Get-HouseMacHex -Value $wantedMac))
+}
+
 $failing = New-Object System.Collections.Generic.List[string]
 if (-not $exists) { $failing.Add('exists') }
 if (-not $generation) { $failing.Add('generation') }
@@ -158,8 +180,9 @@ if (-not $disk) { $failing.Add('disk') }
 if (-not $oneadapter) { $failing.Add('oneadapter') }
 if (-not $switch) { $failing.Add('switch') }
 if (-not $checkpoints) { $failing.Add('checkpoints') }
+if (-not $macOk) { $failing.Add('mac') }
 
 $detail = 'vm ready'
 if ($failing.Count -gt 0) { $detail = ($failing.ToArray() -join ', ') }
 
-return (ConvertTo-VmResult -Ok ($failing.Count -eq 0) -Detail $detail -Evidence (ConvertTo-VmEvidence -Exists $exists -Generation $generation -SecureBoot $secureboot -Tpm $tpm -Cpu $cpu -Memory $memory -StaticMemory $staticMemory -Disk $disk -OneAdapter $oneadapter -Switch $switch -Checkpoints $checkpoints))
+return (ConvertTo-VmResult -Ok ($failing.Count -eq 0) -Detail $detail -Evidence (ConvertTo-VmEvidence -Exists $exists -Generation $generation -SecureBoot $secureboot -Tpm $tpm -Cpu $cpu -Memory $memory -StaticMemory $staticMemory -Disk $disk -OneAdapter $oneadapter -Switch $switch -Checkpoints $checkpoints -MacConfigured $macConfigured -MacOk $macOk))

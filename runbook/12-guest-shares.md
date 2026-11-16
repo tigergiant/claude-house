@@ -1,7 +1,7 @@
 ---
 id: guest-shares
 title: Open the shares inside the house
-order: 11
+order: 12
 requires: [shares]
 runs_on: guest
 admin: true

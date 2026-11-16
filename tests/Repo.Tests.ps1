@@ -43,10 +43,10 @@ BeforeAll {
 }
 
 Describe 'runbook and check pairing' {
-    It 'covers fifteen pages and the preflight check, and daily.md is not a step' {
-        $script:steps.Count | Should -Be 15
+    It 'covers sixteen pages and the preflight check, and daily.md is not a step' {
+        $script:steps.Count | Should -Be 16
         $checks = @(Get-ChildItem -LiteralPath (Join-Path $script:repo 'checks') -Filter '*.ps1')
-        @($checks | Where-Object { $_.BaseName -ne 'preflight' }).Count | Should -Be 15
+        @($checks | Where-Object { $_.BaseName -ne 'preflight' }).Count | Should -Be 16
         @($checks | Where-Object { $_.Name -eq 'preflight.ps1' }).Count | Should -Be 1
         @($script:steps | Where-Object { $_.Id -eq 'preflight' }).Count | Should -Be 0
         (Test-Path -LiteralPath (Join-Path $script:repo 'runbook\daily.md') -PathType Leaf) | Should -Be $true
@@ -231,7 +231,7 @@ Describe 'mutating command detector' {
         $del = $do.IndexOf('del /f')
         $age | Should -BeGreaterThan -1
         $del | Should -BeGreaterThan $age
-        $login = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\14-claude-login.md'))
+        $login = [System.IO.File]::ReadAllText((Join-Path $script:repo 'runbook\15-claude-login.md'))
         $login | Should -Match '123456'
         $login | Should -Match 'daily\.md'
         $login | Should -Not -Match 'GetNetworkCredential'
